@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "test-mod",
+	"version": "${version}",
+	"name": "Jade Bottle (玉净瓶)",
+	"description": "Adds the Jade Bottle: a bottle that works like a bucket but can hold and pour water infinitely.",
+	"authors": [
+		"Yuan"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/test-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yuan.test.TestMod"
+		],
+		"fabric-datagen": [
+			"com.yuan.test.TestModDataGenerator"
+		]
+	},
+	"mixins": [
+		"test-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
