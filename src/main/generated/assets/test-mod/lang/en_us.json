@@ -1,0 +1,8 @@
+{
+  "block.test-mod.jaden_block": " jade block",
+  "item.test-mod.jade_bottle": " jade bottle (water)",
+  "item.test-mod.jade_bottle_card": " jade bottle (water) card",
+  "item.test-mod.lava_jade_bottle": " jade bottle (lava)",
+  "item.test-mod.lava_jade_bottle_card": " jade bottle (lava) card",
+  "itemGroup.jade_bottle_group": " jade bottle group"
+}
