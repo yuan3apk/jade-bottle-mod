@@ -26,8 +26,10 @@ public class JadeBottleGroups {
                         .icon(() -> new ItemStack(TestMod.JADE_BOTTLE))
                         .entries((displayContext, entries) ->{
                             entries.add(TestMod.JADE_BOTTLE);
+                            entries.add(TestMod.LAVA_JADE_BOTTLE);
                             entries.add(JadenBlocks.JADEN_BLOCK);
                             entries.add(TestMod.JADE_BOTTLE_CARD);
+                            entries.add(TestMod.LAVA_JADE_BOTTLE_CARD);
                         })
                         .build()
         );

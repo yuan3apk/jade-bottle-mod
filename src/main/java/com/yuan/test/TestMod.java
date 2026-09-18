@@ -1,15 +1,14 @@
 package com.yuan.test;
 
 import com.yuan.test.block.JadenBlocks;
-import com.yuan.test.item.JadeBottleCard;
+import com.yuan.test.item.JadeBottleCardItem;
 import com.yuan.test.item.JadeBottleGroups;
 import com.yuan.test.item.JadeBottleItem;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -28,7 +27,14 @@ public class TestMod implements ModInitializer {
 	public static final Item JADE_BOTTLE = new JadeBottleItem(
 		new Item.Settings().maxCount(1)
 	);
-	public static final Item JADE_BOTTLE_CARD = new JadeBottleCard(
+	// 玉净瓶(火)：同样无限装/倒，只是液体换成岩浆。
+	public static final Item LAVA_JADE_BOTTLE = new JadeBottleItem(
+		new Item.Settings().maxCount(1), Fluids.LAVA
+	);
+	public static final Item JADE_BOTTLE_CARD = new JadeBottleCardItem(
+		new Item.Settings().maxCount(16)
+	);
+	public static final Item LAVA_JADE_BOTTLE_CARD = new JadeBottleCardItem(
 		new Item.Settings().maxCount(16)
 	);
 
@@ -40,6 +46,8 @@ public class TestMod implements ModInitializer {
 
 		Registry.register(Registries.ITEM, id("jade_bottle"), JADE_BOTTLE);
 		Registry.register(Registries.ITEM, id("jade_bottle_card"), JADE_BOTTLE_CARD);
+		Registry.register(Registries.ITEM, id("lava_jade_bottle"), LAVA_JADE_BOTTLE);
+		Registry.register(Registries.ITEM, id("lava_jade_bottle_card"), LAVA_JADE_BOTTLE_CARD);
 
 		JadeBottleGroups.registerGroups();
 

@@ -28,6 +28,13 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(TestMod.JADE_BOTTLE_CARD), conditionsFromItem(TestMod.JADE_BOTTLE_CARD))
                 .offerTo(exporter, new Identifier(TestMod.MOD_ID, "jade_bottle"));
 
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, TestMod.LAVA_JADE_BOTTLE, 1)
+                .pattern("BBB")
+                .pattern("BAB")
+                .pattern("BBB")
+                .input('A', TestMod.LAVA_JADE_BOTTLE_CARD)
+                .input('B', Items.DIAMOND)
+                .criterion(hasItem(TestMod.LAVA_JADE_BOTTLE_CARD), conditionsFromItem(TestMod.LAVA_JADE_BOTTLE_CARD))
+                .offerTo(exporter, new Identifier(TestMod.MOD_ID, "lava_jade_bottle"));
     }
 }

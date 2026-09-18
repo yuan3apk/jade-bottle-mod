@@ -22,5 +22,7 @@ public class ModModelsProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(TestMod.JADE_BOTTLE_CARD, Models.GENERATED);
         itemModelGenerator.register(TestMod.JADE_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(TestMod.LAVA_JADE_BOTTLE_CARD, Models.GENERATED);
+        itemModelGenerator.register(TestMod.LAVA_JADE_BOTTLE, Models.GENERATED);
     }
 }
